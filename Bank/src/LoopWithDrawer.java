@@ -10,7 +10,7 @@ public class LoopWithDrawer extends Thread{
     @Override
     public void run(){
         while (!this.isInterrupted()) {
-            //synchronized (this) {
+            //synchronized (account) {
                 this.account.withdraw(100);
         //    }
         }

@@ -13,4 +13,9 @@ public class SyncedAccount extends UnsyncedAccount {
     synchronized public void withdraw(final long amount){
         super.withdraw(amount);
     }
+
+    @Override
+    synchronized public long getBalance(){
+        return super.getBalance();
+    }
 }

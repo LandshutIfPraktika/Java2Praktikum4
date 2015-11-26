@@ -10,7 +10,7 @@ public class LoopDepositor extends Thread {
     @Override
     public void run(){
         while (!this.isInterrupted()) {
-            //synchronized (this) {
+            //synchronized (account) {
                 this.account.deposit(100);
         //    }
         }
